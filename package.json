@@ -1,0 +1,26 @@
+{
+  "name": "book-saver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/server.js",
+    "dev": "run-p server start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivid-green/book-saver.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vivid-green/book-saver/issues"
+  },
+  "homepage": "https://github.com/vivid-green/book-saver#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.8"
+  }
+}
