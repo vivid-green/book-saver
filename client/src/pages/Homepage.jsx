@@ -41,12 +41,22 @@ const Homepage = () => {
                     if (book.volumeInfo.authors) {
                         authorList = book.volumeInfo.authors.join(", ");
                     }
+                    
+                    let image = "";
+                    if(book.volumeInfo.imageLinks) {
+
+                        if(book.volumeInfo.imageLinks.thumbnail) {
+                            image = book.volumeInfo.imageLinks.thumbnail;
+                        } else {
+                            image = book.volumeInfo.imageLinks.smallThumbnail;
+                        }
+                    }
 
                     return <Card
                         key={book.id}
                         bookId={book.id}
                         title={book.volumeInfo.title}
-                        img={book.volumeInfo.imageLinks.thumbnail}
+                        img={image}
                         authors={authorList}
                         desc={book.volumeInfo.description}
                         link={book.volumeInfo.infoLink}
