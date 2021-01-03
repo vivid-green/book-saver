@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol, MDBFormInline } from "mdbreact";
+import { MDBContainer } from "mdbreact";
 import Card from '../components/Card';
 
 const SavedPage = () => {
